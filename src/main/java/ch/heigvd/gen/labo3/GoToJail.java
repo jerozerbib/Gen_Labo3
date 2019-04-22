@@ -6,10 +6,13 @@ public class GoToJail extends Square{
     }
 
     @Override
-    public void landedOn(Player p) {
+    public boolean landedOn(Player p) {
         Jail jail = new Jail("jail");
         if (p.getPiece().getLocation() == this){
             p.getPiece().setLocation(jail);
+            return true;
         }
+
+        return false;
     }
 }

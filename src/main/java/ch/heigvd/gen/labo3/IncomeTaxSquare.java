@@ -8,10 +8,13 @@ public class IncomeTaxSquare extends Square {
     }
 
     @Override
-    public void landedOn(Player p) {
+    public boolean landedOn(Player p) {
         int AMOUNT = 200;
         if (p.getPiece().getLocation() == this){
             p.reduceCash(Math.min(p.getNetWorth() / 10, AMOUNT));
+            return true;
         }
+
+        return false;
     }
 }

@@ -7,10 +7,12 @@ public class GoSquare extends Square{
     }
 
     @Override
-    public void landedOn(Player p) {
+    public boolean landedOn(Player p) {
         int AMOUNT = 200;
         if (p.getPiece().getLocation() == this){
             p.addCash(AMOUNT);
+            return true;
         }
+        return false;
     }
 }
