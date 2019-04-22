@@ -1,8 +1,8 @@
 package ch.heigvd.gen.labo3;
 
-public class Jail extends Square{
+public class JailSquare extends Square{
 
-    Jail (String name){
+    JailSquare(String name){
         super(name);
     }
 
