@@ -1,15 +1,12 @@
 package ch.heigvd.gen.labo3;
 
-public class RegularSquare extends Square{
+public class Jail extends Square{
 
-
-    RegularSquare(String name) {
+    Jail (String name){
         super(name);
     }
 
     @Override
     public void landedOn(Player p) {
     }
-
-
 }
